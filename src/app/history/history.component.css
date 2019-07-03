@@ -1,0 +1,60 @@
+div.wrapper {
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.article {
+  margin-top: 10vh;
+}
+
+.article h1 {
+  font-size: 1.5rem;
+  margin: 2% 0;
+  text-align: center;
+}
+
+.article h2 {
+  font-size: 1.3rem;
+  margin-bottom: 3%;
+}
+
+img.burning_reactor {
+  width: 40vh;
+  float: left;
+  margin-right: 10px;
+}
+
+span {
+  font-size: 0.9rem;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+h2 {
+  margin-top: 5%;
+}
+
+p {
+  clear: both;
+  margin: 10px 0;
+}
+
+p:last-of-type {
+  margin-bottom: 15px;
+}
+
+footer {
+
+  min-height: 5vh;
+  width: calc(60vw + 22px);
+  margin: 0 auto;
+  background-color: #444;
+}

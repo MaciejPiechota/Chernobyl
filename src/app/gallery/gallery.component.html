@@ -1,0 +1,10 @@
+<section>
+  <div>
+    <img [src]="selectedImage" />
+  </div>
+  <ul>
+    <li *ngFor="let image of images; let i = index">
+      <img (click)="selectedIndex = i" [class.selected]="selectedIndex === i" [src]="image" />
+    </li>
+  </ul>
+</section>

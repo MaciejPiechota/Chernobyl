@@ -1,0 +1,29 @@
+<div class="class wrapper">
+  <form [formGroup]="myForm">
+    <h2>Skontaktuj się z nami!</h2>
+    <label>
+      <span>Imię i nazwisko</span>
+      <input formControlName="name" placeholder="imie i nazwisko"
+        [ngClass]="{'in-valid': !myForm.controls['name'].valid && myForm.controls['name'].touched}">
+      <b class="alert" *ngIf="!myForm.controls['name'].valid && myForm.controls['name'].touched">To pole jest
+        wymagane</b>
+    </label>
+    <label>
+      <span>Email</span>
+      <input formControlName="email" placeholder="email"
+        [ngClass]="{'in-valid': !myForm.controls['email'].valid && myForm.controls['email'].touched}">
+      <b class="alert" *ngIf="!myForm.controls['email'].valid && myForm.controls['email'].touched">Nieprawidłowy format
+        adresu mailowego</b>
+    </label>
+    <label>
+      <span>Wiadomość</span>
+      <textarea formControlName="message"
+        [ngClass]="{'in-valid': !myForm.controls['message'].valid && myForm.controls['message'].touched}">
+      </textarea> <b class="alert" *ngIf="!myForm.controls['message'].valid && myForm.controls['message'].touched">To pole
+        jest wymagane</b>
+    </label>
+    <button [disabled]="!myForm.valid">
+      <span class="btn-span">Wyślij</span>
+    </button>
+  </form>
+</div>
